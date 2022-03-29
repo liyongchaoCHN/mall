@@ -1,11 +1,16 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <div class="header"></div>
+  </div>
 </template>
 
 <script>
 export default {}
 </script>
 
-<style lang="less">
-@import '@/assets/css/base.css';
+<style>
+.header {
+  height: 50px;
+  background-color: pink;
+}
 </style>
