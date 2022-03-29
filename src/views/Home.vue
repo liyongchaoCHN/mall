@@ -4,16 +4,17 @@
 
 <script>
 export default {
-  name: 'MallHome',
-
+  name: 'Home',
   data() {
     return {}
   },
 
-  mounted() {},
+  components: {},
 
-  methods: {}
+  methods: {},
+
+  mounted() {}
 }
 </script>
 
-<style lang="less" scoped></style>
+<style scoped></style>

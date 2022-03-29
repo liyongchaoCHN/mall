@@ -5,12 +5,15 @@
 </template>
 
 <script>
-export default {}
+import { userinfo } from '@/network/api.js'
+
+export default {
+  created() {
+    userinfo().then(res => {
+      console.log(res)
+    })
+  }
+}
 </script>
 
-<style>
-.header {
-  height: 50px;
-  background-color: pink;
-}
-</style>
+<style></style>
