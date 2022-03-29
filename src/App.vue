@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <div class="header"></div>
+    <Topbar></Topbar>
+    <Header></Header>
+    <route-view></route-view>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
-import { userinfo } from '@/network/api.js'
+import Topbar from '@/components/content/Topbar.vue'
+import Header from '@/components/content/Header.vue'
+import Footer from '@/components/content/Footer.vue'
 
 export default {
-  created() {
-    userinfo().then(res => {
-      console.log(res)
-    })
+  components: {
+    Topbar,
+    Header,
+    Footer
   }
 }
 </script>
